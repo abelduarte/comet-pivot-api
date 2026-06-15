@@ -1,0 +1,8 @@
+services:
+  comet-pivot-api:
+    build: .
+    restart: unless-stopped
+    environment:
+      PORT: "8080"
+    ports:
+      - "127.0.0.1:42382:8080"
